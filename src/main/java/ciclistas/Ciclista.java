@@ -9,6 +9,7 @@ public class Ciclista {
 	private int tiempoAcumulado = 0;
 //métodos: funciones, procedimientos, acciones
 	// constructor
+	@override
 	public Ciclista(int identificador, String nombre) {
 		this.identificador = identificador;
 		this.nombre = nombre;
@@ -54,6 +55,12 @@ public class Ciclista {
 		System.out.println("El identificador es " + identificador);
 		System.out.println("El nombre es " + nombre);
 		System.out.println("El tiempo acumulado es " + tiempoAcumulado);
+	}
+
+	@Override
+	public String toString() {
+		return "Ciclista [identificador=" + identificador + ", nombre=" + nombre + ", tiempoAcumulado="
+				+ tiempoAcumulado + "]";
 	}
 
 }
